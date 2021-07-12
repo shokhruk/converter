@@ -39,7 +39,7 @@ fetch('https://www.cbr-xml-daily.ru/daily_json.js').then(function (result0) {
 })
 
 input.oninput = function (){ // выводим результат на страницу после расчета
-    result.value = parseFloat(input.value) / rates.USD.value;
+    result.value = parseFloat(input.value) / rates[select.value].value;
 }
 
 
